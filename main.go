@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	array := []int{1, 2, 3, 5, 6}
+	array := []int{11, 7, 10, 5, 6}
 	x := 1
 	result := algorytm.BinarySearch(array, x)
 
