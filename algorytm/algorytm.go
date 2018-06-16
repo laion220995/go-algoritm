@@ -1,13 +1,7 @@
 package algorytm
 
-import (
-	"fmt"
-)
-
 // BinarySearch - algorytm for binary search
 func BinarySearch(array []int, x int) int {
-	array = quickSort(array)
-	fmt.Println(array)
 	high := len(array) - 1
 	low := 0
 
@@ -27,8 +21,8 @@ func BinarySearch(array []int, x int) int {
 	return -1
 }
 
-// quickSort - algorytm for quick sort using slice
-func quickSort(array []int) []int {
+// QuickSort - algorytm for quick sort using slice
+func QuickSort(array []int) []int {
 	if len(array) <= 1 {
 		return array
 	}
@@ -50,8 +44,8 @@ func quickSort(array []int) []int {
 		}
 	}
 
-	less = append(quickSort(less), pivot)
-	greater = quickSort(greater)
+	less = append(QuickSort(less), pivot)
+	greater = QuickSort(greater)
 
 	return append(less, greater...)
 }

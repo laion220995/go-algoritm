@@ -9,6 +9,7 @@ import (
 func main() {
 	array := []int{11, 7, 10, 5, 6}
 	x := 1
+	array = algorytm.QuickSort(array)
 	result := algorytm.BinarySearch(array, x)
 
 	if result != -1 {
