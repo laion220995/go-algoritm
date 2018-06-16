@@ -45,12 +45,12 @@ func TestQuickSort(t *testing.T) {
 		}
 
 		if len(resultArray) != len(pair.resultArray) {
-			t.Error("Compare array len is not equal", len(resultArray), len(pair.resultArray))
+			t.Error("Compared array len's is not equal", len(resultArray), len(pair.resultArray))
 		}
 
 		for i := range resultArray {
 			if resultArray[i] != pair.resultArray[i] {
-				t.Error("Array element is not equal", resultArray[i], pair.resultArray[i])
+				t.Error("Array's elements is not equal", resultArray[i], pair.resultArray[i])
 			}
 		}
 	}
