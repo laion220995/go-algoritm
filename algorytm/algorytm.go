@@ -21,7 +21,7 @@ func BinarySearch(array []int, x int) int {
 	return -1
 }
 
-// QuickSort - algorytm for quick sort using slice
+// QuickSort - algorytm for quick sort, using slice
 func QuickSort(array []int) []int {
 	if len(array) <= 1 {
 		return array
