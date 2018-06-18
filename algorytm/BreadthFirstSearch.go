@@ -6,7 +6,7 @@ import (
 
 type checkedfunc func(value *string) bool
 
-// BreadthFirstSearch - algorithm for traversing or
+// BreadthFirstSearch - algorytm for traversing or
 // searching tree or graph data structures
 func BreadthFirstSearch(graph map[string][]string, name string, checkedFunc checkedfunc) bool {
 
